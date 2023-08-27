@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <div class="mobile-menu hidden">
+    <div class="mobile-feauters-dropdown">
+      <button class="feautersBtnMobile mobile-dropBtn">Feauters <img class="arrow-down-mobile" src="images/icon-arrow-down.svg" alt=""> <img class="arrow-up-mobile hidden"  src="images/icon-arrow-up.svg" alt=""></button>
+      <div class="feauters-content-mobile dropdown-content-mobile hidden">
+        <a href=""><img src="images/icon-todo.svg" alt="">Todo List</a>
+        <a href=""><img src="images/icon-calendar.svg" alt="">Calendar</a>
+        <a href=""><img src="images/icon-reminders.svg" alt="">Reminders</a>
+        <a href=""><img src="images/icon-planning.svg" alt="">Planning</a>
+      </div>
+    </div>
+    <div class="mobile-company-dropdown dropdown">
+      <button class="companyBtnMobile mobile-dropBtn">Company <img class="arrow-down2-mobile" src="images/icon-arrow-down.svg" alt="arrow-down"> <img class="arrow-up2-mobile hidden" src="images/icon-arrow-up.svg" alt="arrow-up"></button>
+      <div class="company-content-mobile dropdown-content-mobile hidden">
+        <a href="">History</a>
+        <a href="">Our Team</a>
+        <a href="">Blog</a>
+      </div>
+    </div>
+      <div class="also">
+        <a href="">Careers</a>
+        <a href="">About</a>
+      </div>
+      <div class="account-mobile">
+        <p class="login-mobile">Login</p>
+        <p class="register-mobile">Register</p>
+      </div>
+  </div>
+  <div class="navbar">
+    <div class="nav-links">
+      <img class="logo" src="images/logo.svg" alt="logo">
+      <div class="mobile-icons">
+        <img class="mobile-close-menu hidden" src="images/icon-close-menu.svg" alt="">
+        <img class="mobile-open-menu" src="images/icon-menu.svg" alt="">
+      </div>
+      <div class="nav-menu">
+        <div class="feauters-dropdown dropdown">
+          <button class="feautersBtn dropbtn">Feauters <img class="arrow-down" src="images/icon-arrow-down.svg" alt="arrow-down"> <img class="arrow-up hidden" src="images/icon-arrow-up.svg" alt="arrow-up"></button>
+          <div class="feauters-content dropdown-content">
+            <a href=""><img src="images/icon-todo.svg" alt="">Todo List</a>
+            <a href=""><img src="images/icon-calendar.svg" alt="">Calendar</a>
+            <a href=""><img src="images/icon-reminders.svg" alt="">Reminders</a>
+            <a href=""><img src="images/icon-planning.svg" alt="">Planning</a>
+          </div>
+        </div>
+        <div class="company-dropdown dropdown">
+          <button class="companyBtn dropbtn">Company <img class="arrow-down2" src="images/icon-arrow-down.svg" alt="arrow-down"> <img class="arrow-up2 hidden" src="images/icon-arrow-up.svg" alt="arrow-up"></button>
+          <div class="company-content dropdown-content">
+            <a href="">History</a>
+            <a href="">Our Team</a>
+            <a href="">Blog</a>
+          </div>
+        </div>
+        <a href="">Careers</a>
+        <a href="">About</a>
+      </div>
+    </div>
+    <div class="account">
+      <p class="login">Login</p>
+      <p class="register">Register</p>
+    </div>
+    
+  </div>
+
+  <div class="main">
+    <div class="all-main">
+      <div class="left">
+        <img class="hidden" src="images/image-hero-mobile.png" alt="">
+        <h1>Make remote work</h1>
+  
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+  
+        <div class="btn">
+          <button>Learn more</button>
+        </div>
+
+        <div class="images">
+          <img src="images/client-databiz.svg" alt="">
+          <img src="images/client-audiophile.svg" alt="">
+          <img src="images/client-meet.svg" alt="">
+          <img src="images/client-maker.svg" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <img src="images/image-hero-desktop.png" alt="desktop">
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

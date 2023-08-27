@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Epilogue:wght@500;700&family=Hanken+Grotesk:wght@500&family=Inter:wght@400;700;800&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Plus+Jakarta+Sans:wght@500&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.nav-links {
+    display: flex;
+    width: 50%;
+    padding-top: 1rem;
+}
+
+.logo {
+    padding: 0 2rem 0;
+    margin-right: 1.625rem;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    margin-right: 2rem;
+    color: hsl(0, 0%, 41%);
+    margin-top: 0.2rem;
+}
+.dropdown {
+    margin-right: 2rem;
+}
+.dropbtn {
+    font-size: 18px;
+    background-color: hsl(0, 0%, 98%);
+    border: none;
+    color: hsl(0, 0%, 41%);
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    padding: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 1;
+    margin-top: 1rem;
+}
+
+.dropdown-content img {
+    margin-right: 1rem;
+}
+
+.dropdown-content a {
+    margin-bottom: 0.5rem;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.account {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    color: hsl(0, 0%, 41%);
+}
+
+.login {
+    display: grid;
+    place-items: center;
+}
+
+.register {
+    border: 1px solid hsl(0, 0%, 8%);
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 15px;
+}
+
+.main {
+    width: 100%;
+}
+
+.all-main {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left {
+    width: 58%;
+}
+
+.left p {
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+    color: hsl(0, 0%, 41%);
+}
+
+.left button {
+    color: white;
+    background-color: hsl(0, 0%, 8%);
+    padding: 0.625rem 1rem 0.635rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.right {
+    width: 55%;
+}
+
+.right img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 66px;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 8rem;
+}
+
+.dropbtn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.nav-menu a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.login:hover {
+    color: black;
+    cursor: pointer;
+}
+.register:hover {
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.left button:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 376px) {
+    .nav-menu, .account, .right {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        padding: 0 1rem 0;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left img {
+        display: block;
+        width: 100%;
+    }
+
+    .all-main {
+        display: block;
+    }
+
+    h1 {
+        font-size: 32px;
+        text-align: center;
+        margin: 3rem 0 1.625rem;
+    }
+
+    .left p {
+        text-align: center;
+        font-size: 16px;
+        margin: 0 1rem 1.625rem;
+    }
+
+    .images {
+        margin: 0 1rem 3rem;
+    }
+
+    .btn {
+        margin-bottom: 3rem;
+    }
+    .mobile-menu {
+        position: fixed;
+        left: 7.8125rem;
+        z-index: 2;
+        width: 250px;
+        height: 100%;
+        background-color: #fff;
+        padding: 0 1rem 0;
+    }
+
+    .also {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .also a {
+        text-decoration: none;
+        color: hsl(0, 0%, 41%);
+        margin-bottom: 1rem;
+    }
+
+    .mobile-icons {
+        z-index: 3;
+    }
+
+    .mobile-feauters-dropdown {
+        margin: 5rem 0 0;
+    }
+    .feautersBtnMobile {
+    }
+    .mobile-dropBtn {
+        border: none;
+        background-color: #fff;
+        font-size: 18px;
+        color: hsl(0, 0%, 41%);
+        margin-bottom: 1.625rem;
+    }
+
+    .mobile-dropBtn img {
+        padding-left: 0.625rem;
+    }
+    .feauters-content-mobile {
+
+    }
+    .dropdown-content-mobile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .dropdown-content-mobile a {
+        margin: 0 2rem 1rem;
+        text-decoration: none;
+        color: hsl(0, 0%, 41%);
+    }
+
+    .dropdown-content-mobile a img {
+        margin-right: 0.5rem;
+    }
+    .mobile-company-dropdown {
+    }
+    .dropdown {
+    }
+    .companyBtnMobile {
+    }
+    .arrow-down2 {
+    }
+    .arrow-up2 {
+    }
+    .hidden {
+    }
+    .company-content-mobile {
+    }
+    .account-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .login-mobile {
+        color: hsl(0, 0%, 41%);
+    }
+    .register-mobile {
+        border: 2px solid hsl(0, 0%, 41%);
+        color: hsl(0, 0%, 41%);
+        border-radius: 15px;
+        padding: 0.625rem;
+        margin-top: 1rem;
+    }
+    
+    .hidden {
+        display: none;
+    }
+
+    .mobile-close-menu {
+        z-index: 5;
+    }
+    .mobile-open-menu {
+        z-index: 5;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 377px) {
+    .mobile-close-menu, .mobile-open-menu, .mobile-menu {
+        display: none;
+    }
+}
